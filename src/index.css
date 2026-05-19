@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "DM Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-bg-base: #F7F8FA;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-surface-2: #F0F2F6;
+  
+  --color-brand-primary: #7B2FF7;
+  --color-brand-teal: #00C9A7;
+  --color-brand-pink: #E040C8;
+  
+  --color-text-main: #0F1117;
+  --color-text-muted: #5A6275;
+  --color-text-dim: #9BA3B4;
+  
+  --color-subtle: rgba(0, 0, 0, 0.07);
+  --color-medium: rgba(0, 0, 0, 0.12);
+}
+
+@layer base {
+  body {
+    @apply bg-bg-base text-text-main antialiased selection:bg-brand-primary/20 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-text-main;
+  }
+}
+
+@layer utilities {
+  .text-brand-gradient {
+    @apply bg-clip-text text-transparent bg-linear-to-br from-[#E040C8] via-[#7B2FF7] to-[#00C9A7];
+  }
+  
+  .bg-grad {
+    @apply bg-linear-to-br from-[#E040C8] via-[#7B2FF7] to-[#00C9A7];
+  }
+
+  .bg-grad-h {
+    @apply bg-linear-to-r from-[#7B2FF7] to-[#00C9A7];
+  }
+  
+  .glass-nav {
+    @apply bg-bg-base/92 backdrop-blur-[18px] border-b border-subtle;
+  }
+}
