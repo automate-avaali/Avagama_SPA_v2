@@ -83,9 +83,9 @@ export function FAQ() {
                     Schedule a deep-dive session with our solutions architects to discuss your specific infrastructure.
                   </p>
                 </div>
-                <a href="mailto:shivakumar.r@avaali.com?subject=Strategic Inquiry: Avagama AI Technical Deep-Dive&body=Dear Shivakumar,%0D%0A%0D%0AI have some technical questions regarding Avagama AI's integration with our existing infrastructure and would like to schedule a deep-dive session with your solutions architects.%0D%0A%0D%0ABest regards," className="bg-brand-primary text-white py-4 px-8 rounded-xl text-[0.88rem] font-bold shadow-[0_4px_20px_rgba(123,47,247,0.18)] hover:-translate-y-[2px] transition-all whitespace-nowrap">
+                <Link to="/contact?request=expert" className="bg-brand-primary text-white py-4 px-8 rounded-xl text-[0.88rem] font-bold shadow-[0_4px_20px_rgba(123,47,247,0.18)] hover:-translate-y-[2px] transition-all whitespace-nowrap">
                   Talk to an Expert
-                </a>
+                </Link>
              </div>
           </motion.div>
         </div>

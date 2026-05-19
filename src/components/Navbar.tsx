@@ -42,12 +42,12 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <a
-              href="mailto:shivakumar.r@avaali.com?subject=Strategic Inquiry: Avagama AI Demo Request&body=Dear Shivakumar,%0D%0A%0D%0AI am interested in learning more about how Avagama AI can transform our enterprise discovery and automation processes. %0D%0A%0D%0AI would like to request a demo of the platform and discuss potential high-impact use cases for our organization.%0D%0A%0D%0ABest regards,"
+            <Link
+              to="/contact?request=demo"
               className="bg-brand-primary text-white px-5 py-2 rounded-[7px] text-[0.82rem] font-medium transition-all hover:opacity-88 hover:-translate-y-[1px]"
             >
               Request Demo
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -85,13 +85,13 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <a
-                href="mailto:shivakumar.r@avaali.com?subject=Strategic Inquiry: Avagama AI Demo Request&body=Dear Shivakumar,%0D%0A%0D%0AI am interested in learning more about how Avagama AI can transform our enterprise discovery and automation processes. %0D%0A%0D%0AI would like to request a demo of the platform and discuss potential high-impact use cases for our organization.%0D%0A%0D%0ABest regards,"
+              <Link
+                to="/contact?request=demo"
                 onClick={() => setIsOpen(false)}
                 className="block text-sm font-bold text-brand-primary py-2"
               >
                 Request Demo
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

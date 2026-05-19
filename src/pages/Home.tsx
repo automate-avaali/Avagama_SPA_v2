@@ -47,9 +47,12 @@ export function Home() {
               transition={{ delay: 0.3 }}
               className="flex flex-wrap gap-4"
             >
-            <a href="mailto:shivakumar.r@avaali.com?subject=Strategic Inquiry: Avagama AI Demo Request&body=Dear Shivakumar,%0D%0A%0D%0AI am interested in learning more about how Avagama AI can transform our enterprise discovery and automation processes. %0D%0A%0D%0AI would like to request a demo of the platform and discuss potential high-impact use cases for our organization.%0D%0A%0D%0ABest regards," className="inline-flex items-center gap-2 bg-brand-primary text-white py-3.5 px-7 rounded-lg text-[0.88rem] font-medium shadow-[0_4px_20px_rgba(123,47,247,0.18)] hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(123,47,247,0.28)] transition-all">
+            <Link 
+              to="/contact?request=schedule" 
+              className="inline-flex items-center gap-2 bg-brand-primary text-white py-3.5 px-7 rounded-lg text-[0.88rem] font-medium shadow-[0_4px_20px_rgba(123,47,247,0.18)] hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(123,47,247,0.28)] transition-all"
+            >
                 Schedule a Demo &rarr;
-              </a>
+              </Link>
               <Link to="/platform" className="inline-flex items-center gap-2 border border-brand-primary/30 text-brand-primary py-3.5 px-7 rounded-lg text-[0.88rem] font-medium hover:bg-brand-primary/[0.05] hover:border-brand-primary/50 transition-all">
                 See the Platform
               </Link>
@@ -118,7 +121,7 @@ export function Home() {
           <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.8rem)] font-extrabold tracking-tight text-text-main mb-3.5 relative z-10 leading-tight">Ready to see what's automatable in your enterprise?</h2>
           <p className="text-[0.95rem] font-light text-text-muted max-w-[480px] mx-auto leading-[1.7] mb-9 relative z-10">Book a 30-minute discovery call. We'll walk through your environment, identify where Avagama can deliver the fastest impact, and outline what a pilot could look like — no commitment required.</p>
           <div className="flex flex-wrap gap-4 justify-center relative z-10 mb-4">
-            <a href="mailto:shivakumar.r@avaali.com?subject=Strategic Inquiry: Avagama AI Demo Request&body=Dear Shivakumar,%0D%0A%0D%0AI am interested in learning more about how Avagama AI can transform our enterprise discovery and automation processes. %0D%0A%0D%0AI would like to request a demo of the platform and discuss potential high-impact use cases for our organization.%0D%0A%0D%0ABest regards," className="bg-brand-primary text-white py-3.5 px-7 rounded-lg text-[0.88rem] font-medium shadow-[0_4px_20px_rgba(123,47,247,0.18)] hover:-translate-y-0.5 transition-all">Schedule a Demo &rarr;</a>
+            <Link to="/contact?request=schedule" className="bg-brand-primary text-white py-3.5 px-7 rounded-lg text-[0.88rem] font-medium shadow-[0_4px_20px_rgba(123,47,247,0.18)] hover:-translate-y-0.5 transition-all">Schedule a Demo &rarr;</Link>
             <Link to="/contact" className="bg-bg-surface border border-medium text-text-main py-3.5 px-7 rounded-lg text-[0.88rem] font-normal hover:bg-bg-surface-2 transition-all">Contact Us Form</Link>
           </div>
           <p className="text-[0.75rem] font-light text-text-dim relative z-10">No sales pressure. Just a straight conversation about what's possible.</p>

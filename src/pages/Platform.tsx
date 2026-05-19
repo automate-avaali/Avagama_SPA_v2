@@ -161,9 +161,9 @@ export function Platform() {
       {/* CTA */}
       <section className="py-32 px-6 lg:px-20">
         <div className="max-w-[1240px] mx-auto text-center">
-          <a href="mailto:shivakumar.r@avaali.com?subject=Strategic Inquiry: Avagama AI Platform Demo&body=Dear Shivakumar,%0D%0A%0D%0AI'm interested in a deep-dive walkthrough of the Avagama AI platform and its architecture. Please let us know when our teams can connect for a demo.%0D%0A%0D%0ABest regards," className="inline-flex items-center gap-3 bg-brand-primary text-white py-5 px-12 rounded-xl text-[1rem] font-bold shadow-[0_10px_30px_rgba(123,47,247,0.2)] hover:-translate-y-[2px] transition-all">
+          <Link to="/contact?request=demo" className="inline-flex items-center gap-3 bg-brand-primary text-white py-5 px-12 rounded-xl text-[1rem] font-bold shadow-[0_10px_30px_rgba(123,47,247,0.2)] hover:-translate-y-[2px] transition-all">
             Experience the Platform &rarr;
-          </a>
+          </Link>
         </div>
       </section>
     </div>
