@@ -43,7 +43,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              to="/contact?request=demo"
+              to="/contact?request=schedule"
               className="bg-brand-primary text-white px-5 py-2 rounded-[7px] text-[0.82rem] font-medium transition-all hover:opacity-88 hover:-translate-y-[1px]"
             >
               Request Demo
@@ -86,7 +86,7 @@ export function Navbar() {
                 </Link>
               ))}
               <Link
-                to="/contact?request=demo"
+                to="/contact?request=schedule"
                 onClick={() => setIsOpen(false)}
                 className="block text-sm font-bold text-brand-primary py-2"
               >

@@ -37,7 +37,7 @@ export function Footer() {
           <div>
             <h5 className="font-display font-bold text-[0.78rem] text-text-main mb-3.5">Get Started</h5>
             <ul className="flex flex-col gap-2">
-              <li><a href="mailto:shivakumar.r@avaali.com?subject=Strategic Inquiry: Avagama AI Demo Request&body=Dear Shivakumar,%0D%0A%0D%0AI am interested in learning more about how Avagama AI can transform our enterprise discovery and automation processes. %0D%0A%0D%0AI would like to request a demo of the platform and discuss potential high-impact use cases for our organization.%0D%0A%0D%0ABest regards," className="text-[0.78rem] text-text-dim hover:text-text-muted transition-colors">Request a Demo</a></li>
+              <li><Link to="/contact?request=schedule" className="text-[0.78rem] text-text-dim hover:text-text-muted transition-colors">Request a Demo</Link></li>
               <li><Link to="/contact" className="text-[0.78rem] text-text-dim hover:text-text-muted transition-colors">Contact Us</Link></li>
               <li><Link to="/faq" className="text-[0.78rem] text-text-dim hover:text-text-muted transition-colors">FAQ</Link></li>
               <li><a href="mailto:hello@avagama.ai" className="text-[0.78rem] text-text-dim hover:text-text-muted transition-colors">hello@avagama.ai</a></li>
